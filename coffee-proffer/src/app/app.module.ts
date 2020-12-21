@@ -8,6 +8,8 @@ import { GalleryComponent } from './Components/gallery/gallery.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HomeComponent } from './Components/home/home.component';
 import { NavComponent } from './Components/nav/nav.component';
+import { BlogComponent } from './Components/blog/blog.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,14 @@ import { NavComponent } from './Components/nav/nav.component';
     GalleryComponent,
     FooterComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
+    BlogComponent,
+
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+  
     AppRoutingModule,
     FlexLayoutModule,
   ],
