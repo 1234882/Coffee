@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Console } from 'console';
+//import { Console } from 'console';
 import * as $ from 'jquery';
 import { GalleryService} from 'src/app/services/gallery.service';
 
@@ -14,7 +14,6 @@ export class GalleryComponent{
   constructor(galleryService: GalleryService) {
     galleryService.getGallery().subscribe( res =>{
       this.gallery = res ;
-      console.log(res);
 
     },err =>{
       console.log(err);

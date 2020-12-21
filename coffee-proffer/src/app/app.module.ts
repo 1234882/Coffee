@@ -9,16 +9,12 @@ import { GalleryComponent } from './Components/gallery/gallery.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HomeComponent } from './Components/home/home.component';
 import { NavComponent } from './Components/nav/nav.component';
-<<<<<<< HEAD
-<<<<<<< HEAD
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-=======
 import { MenuComponent } from './Components/menu/menu.component';
->>>>>>> origin/christine
-=======
+
 import { BlogComponent } from './Components/blog/blog.component';
 import { HttpClientModule } from '@angular/common/http';
->>>>>>> origin/ahmed
+import { ApiPostService } from './services/api-post.service';
+
 
 @NgModule({
   declarations: [
@@ -27,24 +23,18 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     HomeComponent,
     NavComponent,
-<<<<<<< HEAD
-    MenuComponent
-=======
     BlogComponent,
+    MenuComponent
 
->>>>>>> origin/ahmed
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-<<<<<<< HEAD
-=======
-  
->>>>>>> origin/ahmed
+
     AppRoutingModule,
     FlexLayoutModule,
   ],
-  providers: [GalleryService],
+  providers: [GalleryService, ApiPostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
