@@ -1,0 +1,372 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-transform: capitalize;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  #home .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+  }
+
+  #home .video-container .vid {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #home {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    position: relative;
+  }
+  #home .video-container .v1 {
+    display: block;
+  }
+  
+  #home .controls {
+    position: absolute;
+    bottom: 14%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  #home .controls .dots {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    background: #ff0000;
+    margin: 0 1rem;
+  }
+  
+  
+  #home .controls .dots:hover {
+    background: #fff;
+  }
+  
+  #special {
+    background: rgb(248, 247, 247);
+    min-height: 100vh;
+  }
+  
+  #special .heading h1 {
+    font-size: 4rem;
+    color: #000;
+    padding-top: 7rem;
+    margin-bottom: 2rem;
+  }
+  
+  #special .heading h1 span {
+    color:  #ff0000;
+  }
+  
+  #special .heading p {
+    color: rgb(5, 5, 5);
+    font-size: 2rem;
+  }
+  
+  #special .card-container {
+    width: 95%;
+    margin: 7rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  #special .card-container .card {
+    height: 40rem;
+    width: 30rem;
+    background: rgb(44, 43, 43);
+    padding: 1rem;
+    margin: 1.2rem;
+    text-align: center;
+  }
+  
+  #special .card-container .card img {
+    height: 50%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  #special .card-container .card p {
+    font-size: 1.4rem;
+    margin: 2rem 0;
+    color:#fff;
+  }
+  
+  #special .card-container .card button {
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    color: rgb(8, 8, 8);
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 3.5rem;
+    width: 14rem;
+    background: rgb(248, 245, 245);
+  }
+  
+  #special .card-container .card button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ff0000;
+    height: 100%;
+    width: 0%;
+    -webkit-transition: .2s;
+    transition: .2s;
+    z-index: -1;
+  }
+  
+  #special .card-container .card button:hover::before {
+    width: 100%;
+  }
+  
+  #special .card-container .card button:hover {
+    color: #fff;
+  }
+  
+  #special .card-container .card:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+ 
+  
+  @media (max-width: 786px) {
+    html {
+      font-size: 50%;
+    }
+   
+  }
+
+  .container{
+    width: 100%;
+    max-width: 122.5rem;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+  }
+ 
+  .sub-headline{
+    font-size:8.5rem;
+    font-family: var( --secondary-font);
+    color:var(--secondary-font-color);
+    font-weight: 100;
+    line-height: .4;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: fadeUp .5s forwards;
+    animation-delay: .5s;
+  }
+  .first-letter{
+    text-transform: uppercase;
+    font-size: 10.3rem;
+  }
+  .headline{
+    color: #fff;
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .5rem;
+    margin-right: -.5rem;
+    animation: scale .5s forwards;
+    animation-delay: .5s;
+  }
+  .separator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .asterisk{
+    font-size: 1.2rem;
+    color: var(--secondary-font-color);
+    margin: 0 1.6rem;
+    opacity: 0;
+    animation: spin .5s forwards;
+    animation-delay: .7s;
+  }
+  .single-animation{
+    opacity: 0;
+    animation: fadedown .5s forwards;
+    animation-delay: 1.5s;
+  }
+  .headline-description h5{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    letter-spacing: 2px;
+    margin-right: -3px;
+  
+  }
+  .btn{
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: -2px;
+  }
+  .cta-btn{
+    font-size: 1.1rem;
+    background-color: #fff;
+    padding: .9rem 1.8rem;
+    color: var(--body-font-color);
+    border-radius: .4rem;
+    transition: background-color .5s;
+  }
+  .cta-btn:hover,
+  .cta-btn:focus{
+     color: #fff;
+     background-color: var(--secondary-font-color);
+  }
+  /* discover */
+  .global-headline{
+    text-align: center;
+    margin-top: 3.9rem;
+  }
+  .discover-our-story .global-headline{
+    margin-top: 6.9rem;
+  }
+  .global-headline .asterisk{
+    color: var(--body-font-color);
+    margin: 2.4rem 0;
+  }
+  .headline-dark{
+    color: var(--body-font-color-dark);
+    letter-spacing: .7rem;
+    margin-right: -.7rem;
+  }
+  .global-headline .sub-headline{
+    letter-spacing: -1px;
+    line-height: -42;
+  }
+  .resturant-info{
+    text-align:center;
+  }
+  .resturant-description{
+    margin-bottom: 3rem;
+  }
+  .resturant-description p{
+    line-height: 1.6;
+    margin-bottom: 2.4rem;
+  }
+  .body-btn{
+    font-size: 1.5rem;
+    color: var(--secondary-font-color);
+    position: relative;
+    transition: color .5s;
+  }
+  .body-btn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background-color: var(--secondary-font-color);
+    width: 100%;
+    height: 2px;
+  }
+  .body-btn:hover,
+  .body-btn:focus{
+    color:var(--main-font-color-dark);
+  }
+  .body-btn:hover::before,
+  .body-btn:focus::before{
+    color:var(--main-font-color-dark);
+  }
+  
+  
+  .between{
+     min-height: 65vh;
+     display: flex;
+     align-items: center;
+  }
+  .image-group{
+     display: flex;
+     align-items: center;
+  }
+  .image-group{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-gap: 1.5rem;
+  }
+  .discover-our-menu .resturant-description{
+     padding-top: 3rem;
+     margin-bottom: 0;
+  
+  }
+ 
+  
+/*   
+  @media screen and (min-width:900px){
+    section{
+        padding: 7.9rem;
+    }
+  
+    .sub-headline{
+        font-size: 10rem;
+    }
+    .headline{
+        font-size:4.7rem;
+        letter-spacing: .8rem;
+  
+    }
+    .first-letter{
+        font-size: 12.2rem;
+    }
+    .line{
+        max-width: 11.4rem;
+    }
+    .resturant-info{
+        display: flex;
+        align-items: center;
+    }
+    .resturant-info>div{
+        flex: 1;
+    }
+  .padding-right{
+   padding-right: 7rem;
+  }
+  
+  
+  } */
+  
+  /*# sourceMappingURL=style.css.map */

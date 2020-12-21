@@ -9,7 +9,11 @@ import { GalleryComponent } from './Components/gallery/gallery.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HomeComponent } from './Components/home/home.component';
 import { NavComponent } from './Components/nav/nav.component';
+<<<<<<< HEAD
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+=======
+import { MenuComponent } from './Components/menu/menu.component';
+>>>>>>> origin/christine
 
 @NgModule({
   declarations: [
@@ -17,7 +21,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     GalleryComponent,
     FooterComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

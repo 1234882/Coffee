@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
   <div class="container">
       <nav class="nav ">
           <div class="menu-toggle">
@@ -6,7 +6,6 @@
               <i class="fas fa-times"></i>
           </div>
           <img class="logo" src="./../../../assets/logo.png">
-          <!-- <a href="#" class="logo"><img src="logo.png" alt=""></a> -->
           <ul class="nav-list">
               <li class="nav-item">
                   <a class="nav-link" routerLink="home">Home</a>
@@ -18,7 +17,11 @@
                   <a  class="nav-link" href="#">Our Blog</a>
               </li>
               <li class="nav-item">
+<<<<<<< HEAD
                   <a class="nav-link " routerLink="Gallery">Gallery</a>
+=======
+                  <a class="nav-link " routerLink="Gallery">Gallary</a>
+>>>>>>> origin/christine
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="#about">About Us</a>
@@ -27,6 +30,23 @@
 
       </nav>
   </div>
-</header>
+</header> -->
 <!-- header_ends -->
+<header id="head">
+    <nav>
+    <ul>
+        <li><a routerLink="home">Home</a></li>
+        <li><a routerLink="product">Products</a></li>
+        <li><a routerLink="Gallery">Gallery</a></li>
+        <li><a href="#dish">About Us</a></li>
+        <li><a href="#contact">Our Blog</a></li>
+
+    </ul>
+</nav>
+<div class="fas fa-mug-hot"></div>
+<img class="logo" src="./../../../assets/logo.png">
+</header>
+
 <router-outlet></router-outlet>
+<!-- <script src="./../../../assets/myjs/toggle.js"></script> -->
+
