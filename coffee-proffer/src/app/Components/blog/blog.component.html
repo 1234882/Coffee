@@ -1,0 +1,30 @@
+
+<section>
+<a class="btn btn-primary" routerLink="/NewPost"> New Post</a>
+<table class="table">
+    <thead appHighlight>
+        <th>No</th>
+        <th>Title</th>
+        <!-- <th>ID</th> -->
+        <th>Photo</th>
+        <!-- <th>Body</th> -->
+        <th>Content</th>
+    </thead> 
+ 
+    
+    <tbody>
+        <tr *ngFor="let post of postsList; let i=index" >
+           
+            <td>{{i+1}}</td>
+            <!-- <td>{{post.id}}</td> -->
+            <td>{{post.title}}</td>
+            <td><img class="card-img-top" src="{{post.photo}}" alt="Card image cap">
+            </td>
+            <td>{{post.content}}</td>
+            <td> <a class="btn btn-info"  [routerLink]="['/ApiPost/',post.id]" > More </a></td>
+            <!-- {{post|json}} -->
+            <!-- [routerLink]="['/ApiProduct',prd.id]" -->
+        </tr>
+    </tbody>
+</table>
+</section>

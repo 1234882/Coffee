@@ -10,10 +10,15 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { HomeComponent } from './Components/home/home.component';
 import { NavComponent } from './Components/nav/nav.component';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 =======
 import { MenuComponent } from './Components/menu/menu.component';
 >>>>>>> origin/christine
+=======
+import { BlogComponent } from './Components/blog/blog.component';
+import { HttpClientModule } from '@angular/common/http';
+>>>>>>> origin/ahmed
 
 @NgModule({
   declarations: [
@@ -22,11 +27,20 @@ import { MenuComponent } from './Components/menu/menu.component';
     FooterComponent,
     HomeComponent,
     NavComponent,
+<<<<<<< HEAD
     MenuComponent
+=======
+    BlogComponent,
+
+>>>>>>> origin/ahmed
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+<<<<<<< HEAD
+=======
+  
+>>>>>>> origin/ahmed
     AppRoutingModule,
     FlexLayoutModule,
   ],
