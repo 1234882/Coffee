@@ -25,8 +25,8 @@
 <!--End Header-->
 <section>
 
-<div class="gallery" *ngFor="let gallary of gallery">
-  <div class="column" *ngFor="let gallary of gallery">
+<div class="gallery">
+  <div class="column">
     <div class="content" *ngFor="let gallary of gallery">
       <img src="{{ gallary.title }}" class="rounded" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
         <h3>Our Moment</h3>

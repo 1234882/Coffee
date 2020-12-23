@@ -1,0 +1,51 @@
+<section class="hero" id="hero" style="background:url('./../../../assets/h3.jpg') center no-repeat;background-size: cover;height: 100vh;">
+  <div class="container">
+    <h1 class="heading">Contact Us</h1>
+
+    <div class="contacts">
+      <div class="contact">
+        <img src="./../../../assets/address.jpeg" class="contact-img">
+
+        <h3 class="contact-name">Address</h3>
+        <h5 *ngFor="let contact of contacts">{{contact.branch}},<br>
+          {{contact.address}}
+        </h5>
+      </div>
+      <div class="contact">
+        <img src="./../../../assets/tele.png" class="contact-img">
+
+        <h3 class="contact-name">Phone</h3>
+        <h5 *ngFor="let contact of contacts">{{contact.phone_number}},<br>
+          {{contact.mobile_number}}
+        </h5>
+      </div>
+
+      <div class="contact">
+        <img src="./../../../assets/mail.jpeg" class="contact-img">
+
+        <h3 class="contact-name">Email</h3>
+        <ul class="social-icons"*ngFor="let contact of contacts">
+          <li>
+              <a href="{{contact.social_tw}}"><i class="fab fa-twitter-square">twitter</i></a>
+          </li>
+          <br>
+          <li>
+              <a href="{{contact.social_fb}}"><i class="fab fa-facebook-square">fasebook</i></a>
+          </li>
+          <br>
+          <li>
+            <a href="{{contact.social_inst}}"><i class="fa fa-instagram">instagram</i></a>
+          </li>
+          <br>
+          <li>
+           <a href="{{contact.email}}"><i class="material-icons">email</i></a>
+          </li>
+      </ul>
+      </div>
+
+
+  </div>
+
+
+  </div>
+</section>

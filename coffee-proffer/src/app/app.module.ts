@@ -14,6 +14,9 @@ import { MenuComponent } from './Components/menu/menu.component';
 import { BlogComponent } from './Components/blog/blog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiPostService } from './services/api-post.service';
+import { ContactComponent } from './Components/contact/contact.component';
+import { ContactsService } from './services/contacts.service';
+import { blogApiService } from './services/blogapi.service';
 
 
 @NgModule({
@@ -24,7 +27,8 @@ import { ApiPostService } from './services/api-post.service';
     HomeComponent,
     NavComponent,
     BlogComponent,
-    MenuComponent
+    MenuComponent,
+    ContactComponent
 
   ],
   imports: [
@@ -34,7 +38,7 @@ import { ApiPostService } from './services/api-post.service';
     AppRoutingModule,
     FlexLayoutModule,
   ],
-  providers: [GalleryService, ApiPostService],
+  providers: [GalleryService, ApiPostService, ContactsService, blogApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
