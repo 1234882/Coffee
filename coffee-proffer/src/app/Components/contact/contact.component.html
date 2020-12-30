@@ -1,10 +1,31 @@
-<section class="hero" id="hero" style="background:url('./../../../assets/h3.jpg') center no-repeat;background-size: cover;height: 100vh;">
+<section class="hero" id="hero" style="background:url('./../../../assets/h3.jpg') center no-repeat;background-size: cover;height: 90vh;">
   <div class="container">
-    <h1 class="heading">Contact Us</h1>
+      <h2 class="sub-headline">
+          <span class="first-letter">C</span>ONTACT US
+      </h2>
+      <h1 class="headline">Coffee Proffer</h1>
+      <div class="headline-description">
+          <div class="seprator">
+              <!-- <div class="separator">
+                  <div class="line line-left"></div>
+                  <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                  <div class="line line-right"></div>
 
+              </div> -->
+              <div class="single-animation">
+                  <h5>Contact us!!</h5>
+                  <!-- <a href="" class="btn cta-btn">Start Now</a> -->
+              </div>
+
+          </div>
+      </div>
+  </div>
+</section>
+<section>
+  <div class="container">
     <div class="contacts">
       <div class="contact">
-        <img src="./../../../assets/address.jpeg" class="contact-img">
+        <i class="material-icons" style="font-size:72px">location_on</i>
 
         <h3 class="contact-name">Address</h3>
         <h5 *ngFor="let contact of contacts">{{contact.branch}},<br>
@@ -12,7 +33,7 @@
         </h5>
       </div>
       <div class="contact">
-        <img src="./../../../assets/tele.png" class="contact-img">
+        <i class="material-icons" style="font-size:72px">phone</i>
 
         <h3 class="contact-name">Phone</h3>
         <h5 *ngFor="let contact of contacts">{{contact.phone_number}},<br>
@@ -21,31 +42,42 @@
       </div>
 
       <div class="contact">
-        <img src="./../../../assets/mail.jpeg" class="contact-img">
+        <i class="material-icons" style="font-size:72px">email</i>
 
         <h3 class="contact-name">Email</h3>
         <ul class="social-icons"*ngFor="let contact of contacts">
           <li>
-              <a href="{{contact.social_tw}}"><i class="fab fa-twitter-square">twitter</i></a>
+              <a href="{{contact.social_tw}}"><i class="fa fa-twitter-square">Twitter</i></a>
           </li>
-          <br>
           <li>
-              <a href="{{contact.social_fb}}"><i class="fab fa-facebook-square">fasebook</i></a>
+              <a href="{{contact.social_fb}}"><i class="fa fa-facebook-square">Facebook</i></a>
           </li>
-          <br>
+            <a href="{{contact.social_inst}}"><i  class="fa fa-instagram" style="font-size:24px">Instagram</i></a>
           <li>
-            <a href="{{contact.social_inst}}"><i class="fa fa-instagram">instagram</i></a>
-          </li>
-          <br>
-          <li>
-           <a href="{{contact.email}}"><i class="material-icons">email</i></a>
-          </li>
-      </ul>
+           <a href="{{contact.email}}"><i class="fa fa-google">Email</i></a>
+           </li>
+        </ul>
       </div>
 
 
   </div>
+  <button class="open-button" onclick="openForm()">Send Message</button>
+  <div class="form-popup" id="myForm">
+    <form action="" class="form-container">
+      <h1>Contact Us</h1>
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="email.." required>
 
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write Your Message.." style="height:100px"></textarea>
+
+          <button type="submit" class="btn">Submit</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+    </div>
   </div>
 </section>
+
