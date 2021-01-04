@@ -7,7 +7,7 @@ import { ContactsService } from 'src/app/services/contacts.service'
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  contacts: any;
+  contacts: any | undefined;
 
   constructor(contactsService: ContactsService) {
     contactsService.getContacts().subscribe( res =>{

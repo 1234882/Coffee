@@ -57,7 +57,7 @@ header{
     position: absolute;
     top: 0;
     z-index: 1;
-    background-image: linear-gradient(to bottom,rgba(0,0,0,.5), rgba(0, 0, 0, 0.5),transparent);
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5));
 
 }
 .nav{
@@ -146,7 +146,7 @@ nav::before{
     background: url('./../../../assets/h3.jpg') center no-repeat;
     background-size: cover;
     display: flex;
-   /* align-items: center;*/
+    align-items: center;
     text-align: center;
 }
 .sub-headline{
@@ -254,11 +254,6 @@ nav::before{
      background-color: var(--secondary-font-color);
 }
 /*Contact us*/
-.heading{
-  font-size: 60px;
-  font-family: var(--secondary-font);
-  color: var(--secondary-font-color);
-}
 .contacts{
   column-count: 3;
   display: flex;
@@ -268,30 +263,144 @@ nav::before{
 }
 .contact{
   flex-basis: 260px;
- /* float: left;*/
-  width: 33.33%;
+ /* float: left;
+  width: 33.33%;*/
   padding: 15px;
 }
-.contact .contact-img{
+/*.contact .contact-img{
   height: 130px;
   width: 130px;
   border-radius: 50%;
   cursor: pointer;
   transition: 400ms;
-}
-.contact:hover .contact-img{
-  filter: grayscale(100%);
+}*/
+.material-icons:hover{
+  color: red;
 }
 .contact-name{
   margin-top: 30px;
   font-size: 35px;
-  color: #ccc;
+  font-family: var(--body-font);
+  color: black;
 }
 .contact h5{
   font-size: 18px;
   font-weight: 100;
+  font-family: var(--body-font);
   letter-spacing: 3px;
+  color:black;
+}
+.social-icons{
+  list-style:none;
+  margin-bottom: 5.4rem;
+  display:block;
+  justify-content: center;
+  font-family: var(--body-font);
+
+}
+.social-icons i{
+  font-size: 2rem;
+  color: black;
+  padding: .8rem 2rem;
+  opacity: .5;
+  transition: color .5s;
+}
+.social-icons:hover,
+.social-icons:focus{
+  color:red;
+}
+.open-button {
+  background-color: var(--main-font-color-dark);
   color: #ccc;
+  font-family: var(--body-font);
+  font-size: 18px;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 180px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+.form-container label{
+  font-family: var(--body-font);
+  color: var(--main-font-color-dark);
+  font-size: 15px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container textarea:focus {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  font-family: var(--body-font);
+  font-size: 12px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: var(--main-font-color-dark);
+  font-family: var(--body-font);
+  font-size: 18px;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  font-family: var(--body-font);
+  font-size: 18px;
+  color: var(--main-font-color-dark);
+}
+h1{
+  font-family: var(--body-font);
+  color: var(--main-font-color-dark);
+  font-weight: bold;
+
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 @media screen and (max-width:1150px){
   .contacts{
@@ -304,11 +413,6 @@ nav::before{
   }
 }
 @media screen and (max-width:900px){
-  .heading{
-    font-size: 40px;
-    color: white;
-    text-align: center;
-  }
   .contacts{
     margin: 20px 0;
   }
@@ -452,24 +556,6 @@ background-size: cover;
  }
  .footer-content-about p{
      line-height: 2;
- }
- .social-icons{
-     list-style: none;
-     margin-bottom: 5.4rem;
-     display:flex;
-     justify-content: center;
- }
- .social-icons i{
-     font-size: 2rem;
-     color: #fff;
-     padding: .8rem 2rem;
-     opacity: .5;
-     transition: color .5s;
- }
- .social-icons:hover,
- .social-icons:focus{
-     color:var(--secondary-font-color);
-
  }
  .newsletter-form{
 

@@ -21,6 +21,7 @@ import { ProductsService } from './services/products.service';
 import {AboutService} from './services/about.service'
 import { AboutComponent } from './Components/about/about.component';
 import { LandingComponent } from './Components/landing/landing.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { LandingComponent } from './Components/landing/landing.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-
+    FormsModule,
     AppRoutingModule,
     FlexLayoutModule,
   ],
