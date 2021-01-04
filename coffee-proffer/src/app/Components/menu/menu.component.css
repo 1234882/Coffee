@@ -114,16 +114,17 @@
   }
   
   #special .card-container .card img {
-    height: 50%;
+    height: 60%;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
   
   #special .card-container .card p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin: 2rem 0;
     color:#fff;
+
   }
   
   #special .card-container .card button {

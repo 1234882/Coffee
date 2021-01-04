@@ -9,7 +9,7 @@ import { GalleryService} from 'src/app/services/gallery.service';
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent{
-  gallery: any;
+  gallery: any ;
 
   constructor(galleryService: GalleryService) {
     galleryService.getGallery().subscribe( res =>{
