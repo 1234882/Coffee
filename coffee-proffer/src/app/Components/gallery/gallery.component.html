@@ -1,3 +1,4 @@
+<app-nav></app-nav>
 <script src="./../../../assets/myjs/lightbox.js"></script>
 <section class="hero" id="hero" style="background:url('./../../../assets/h1.jpg') center no-repeat;background-size: cover;height: 80vh;">
   <div class="container">
@@ -26,13 +27,13 @@
 <section>
 
 <div class="gallery">
-  <!--<div class="column">
-    <div class="content" *ngFor="let gallary of gallery">
-      <img src="{{gallary.title}}" class="rounded" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-        <h3>Our Moments</h3>
-    </div>
-  </div>-->
   <div class="column">
+    <div class="content" *ngFor="let gallary of gallery">
+      <img src="{{gallary.photo_url}}" class="rounded" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        <h3>{{gallary.title}}</h3>
+    </div>
+  </div>
+ <!--<div class="column">
     <div class="content">
       <img src="./../../../assets/g1.jpg" class="rounded" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
         <h3>Our Moments</h3>
@@ -103,18 +104,18 @@
       <img src="./../../../assets/g18.jpg" class="rounded" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
         <h3>Our Moments</h3>
     </div>
-  </div>
+  </div>-->
 </div>
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
 
-    <!--<div class="mySlides" *ngFor="let gallary of gallery">
-      <div class="numbertext">1 / 12</div>
-      <img src="{{gallary.title}}" class="rounded">
-    </div>-->
+    <div class="mySlides" *ngFor="let gallary of gallery">
+      <div class="numbertext">12 / 12</div>
+      <img src="{{gallary.photo_url}}" class="rounded">
+    </div>
 
-    <div class="mySlides">
+    <!--<div class="mySlides">
       <div class="numbertext">1 / 12</div>
       <img src="./../../../assets/g1.jpg" class="rounded">
     </div>
@@ -172,7 +173,7 @@
     <div class="mySlides">
       <div class="numbertext">12 / 12</div>
       <img src="./../../../assets/g18.jpg" class="rounded">
-    </div>
+    </div>-->
 
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -183,7 +184,11 @@
     </div>
 
 
-    <div class="column">
+    <div class="column" *ngFor="let gallary of gallery">
+      <img class="demo cursor" src="{{gallary.photo_url}}" style="width:100%" onclick="currentSlide(1)" alt="View Special Moments">
+    </div>
+
+    <!--<div class="column">
       <img class="demo cursor" src="./../../../assets/g1.jpg" style="width:100%" onclick="currentSlide(1)" alt="View Special Moments">
     </div>
     <div class="column">
@@ -218,9 +223,10 @@
     </div>
     <div class="column">
       <img class="demo cursor" src="./../../../assets/g18.jpg" style="width:100%" onclick="currentSlide(12)" alt="Coffee">
-    </div>
+    </div>-->
   </div>
 </div>
 
 </section>
+<app-footer></app-footer>
 

@@ -1,3 +1,4 @@
+<app-nav></app-nav>
 <section class="hero" id="hero" style="background:url('./../../../assets/h3.jpg') center no-repeat;background-size: cover;height: 90vh;">
   <div class="container">
       <h2 class="sub-headline">
@@ -46,9 +47,9 @@
 
         <h3 class="contact-name">Email</h3>
         <ul class="social-icons"*ngFor="let contact of contacts">
-          <li>
+          <!--<li>
               <a href="{{contact.social_tw}}"><i class="fa fa-twitter-square">Twitter</i></a>
-          </li>
+          </li>-->
           <li>
               <a href="{{contact.social_fb}}"><i class="fa fa-facebook-square">Facebook</i></a>
           </li>
@@ -81,3 +82,4 @@
   </div>
 </section>
 
+<app-footer></app-footer>

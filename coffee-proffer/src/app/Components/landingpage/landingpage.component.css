@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+
+
+:root{
+    --main-font:'Oswald', sans-serif;
+    --body-font:'Oswald', sans-serif;
+    --secondary-font:'Herr Von Muellerhoff', cursive;
+    --main-font-color-dark:#252525;
+    --secondary-font-color:#c59d5f;
+    --body-font-color:#515151;
+}
+html{
+    font-family: var(--body-font);
+    color: var(--body-font-color);
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+body{
+    background-image: url('./../../../assets/cup8.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+}
+header{
+    position: absolute;
+    text-align: center;
+    width: 75%;
+    left: 12%;
+    top: 2rem;
+}
+header h1{
+    font-size: 30px;
+}
+.sub-headline{
+    font-size:8.5rem;
+    font-family: var( --secondary-font);
+    color:var(--secondary-font-color);
+    font-weight: 100;
+    line-height: .4;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: fadeUp .5s forwards;
+    animation-delay: .5s;
+}
+.first-letter{
+    font-family: var( --secondary-font);
+    color:var(--secondary-font-color);
+    text-transform: uppercase;
+    font-size: 10.3rem;
+}
+.headline{
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .5rem;
+    margin-right: -.5rem;
+    animation: scale .5s forwards;
+    animation-delay: .5s;
+}
+.separator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-animation{
+    opacity: 0;
+    animation: fadedown .5s forwards;
+    animation-delay: 1.5s;
+}
+.headline-description h5{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    letter-spacing: 2px;
+    margin-right: -3px;
+
+}
+.empty{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+}
+
+.content{
+    display: flex;
+    min-height: 110vh;
+}
+.content section{
+    margin-top: 10vh;
+    margin-left: 20vh;
+}
+.content-form{
+    margin-top: 7rem;
+}
+section i{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.8);
+    color: black;
+    text-align: center;
+}
+.form{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 50%;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+
+.form .contact-form input{
+    width: 30rem;
+    background-color: transparent;
+    border: 0px;
+    border: transparent;
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid #fff;
+}
+.form .contact-form input ~ span{
+    position: absolute;
+    left: 20px;
+    transition: 0.9s ease-in-out;
+    margin-top: 10px;
+}
+.form .contact-form input:focus ~span{
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+.form .contact-form textarea{
+    width: 30rem;
+    border: 0px;
+    background-color: transparent;
+    margin: 20px;
+    font-size: 17px;
+    border-bottom: 2px solid white;
+}
+.form .contact-form textarea ~ span
+{
+    position: absolute;
+    left: 20px;
+    margin-top: 10px;
+    transition: 0.9s ease-in-out;
+}
+.form .contact-form textarea:focus ~span{
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+.form .contact-form input[type=submit]{
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 3.5rem;
+    width: 14rem;
+    background: rgb(248, 3, 3);
+    color: #fff;
+}
+.form .contact-form input[type=submit]:hover{
+    color: rgb(14, 13, 13);
+}
+.form .contact-form input[type=submit]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFF200;
+    height: 100%;
+    width: 0%;
+    -webkit-transition: .2s;
+    transition: .2s;
+    z-index: -1;
+  }
+
+  .form .contact-form input[type=submit]:hover::before {
+    width: 100%;
+  }
+.media{
+    position: absolute;
+    top: 85vh;
+    right: 20vh;
+    display: flex;
+    list-style: none;
+}
+.media li{
+    margin: 20px 30px;
+}
+@media screen and (max-width: 900px){
+    body{
+        background-repeat: repeat-y;
+        overflow: auto;
+    }
+    .sub-headline{
+        font-size: 8rem;
+    }
+    .headline{
+        font-size:3rem;
+        letter-spacing: .8rem;
+
+    }
+    .first-letter{
+        font-size: 10rem;
+    }
+    header{
+        position: absolute;
+        left: 0;
+        top: 20%;
+        width: 100%;
+    }
+    .empty{
+        height: 210vh;
+    }
+    .form{
+        position: absolute;
+        top: 100vh;
+        margin-left: 10%;
+    }
+    .content-form{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0;
+        margin-top: 53vh;
+        margin-left: 10vh;
+    }
+    .content section{
+        margin-top: 0vh;
+        margin-left: 0vh;
+    }
+    .media{
+        position: absolute;
+        top: 190vh;
+        right: 30px;
+    }
+}
+
+ /* animation */
+ @keyframes fadeUp{
+    0%{
+        transform:translateY(4rem);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scale{
+   0%{
+       transform:scale(2);
+
+   }
+   100%{
+       opacity: 1;
+       transform: scale(1);
+   }
+}
+
+@keyframes grow{
+   0%{
+       width: 0;
+   }
+   100%{
+       opacity: 1;
+       width: 100%;
+   }
+}
+
+
+@keyframes spin{
+   0%{
+       transform: rotate(0);
+   }
+   100%{
+       opacity: 1;
+       transform: rotate(-360deg);
+   }
+}
+
+@keyframes fadedown{
+   0%{
+       transform:translateY(-1rem);
+
+   }
+   100%{
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+
+@keyframes up{
+   0%{
+       opacity: 0;
+
+   }
+   50%{
+       opacity: 1;
+   }
+   100%{
+       opacity: 0;
+       transform: translateY(-1rem);
+   }
+}
