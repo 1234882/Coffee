@@ -31,11 +31,11 @@
                     <div class="asterisk"><i class="fas fa-asterisk"></i></div>
 
                 </div>
-                 <div *ngFor="let a of about">
+                 <!--<div *ngFor="let a of about">-->
                     <div class="single-animation" >
-                        <h4 style="font-weight:bold;">{{a.vition}}</h4>
+                        <h4 style="font-weight:bold;">{{about["0"].mistion}}</h4>
                     </div>
-                    <p>{{a.mistion}}</p>
+                    <p>{{about["0"].vition}}</p>
 
                  </div>
 
@@ -46,7 +46,7 @@
                  <img src="./../../../assets/cup4.jpg" alt="">
             </div>
         </div>
-    </div>
+    <!--</div>-->
 </section>
 
 
@@ -61,7 +61,7 @@
 
 
             </div>
-            <div class="resturant-description animate-right" *ngFor="let a of about">
+            <div class="resturant-description animate-right">
 
              <div class="global-headline">
                     <h2 class="sub-headline">
@@ -73,15 +73,19 @@
 
                 </div>
                 <div class="single-animation" >
-                    <h4 style="font-weight:bold;">{{a.vition}}</h4>
+                    <h4 style="font-weight:bold;">{{about["1"].mistion}}</h4>
                 </div>
 
-                <p>{{a.mistion}}</p>
+                <p>{{about["1"].vition}}</p>
             </div>
         </div>
     </div>
 </section>
+<<<<<<< HEAD
  <!-- <h1>{{ about| json}} </h1> -->
+=======
+ <!--<h1>{{ about| json}} </h1>-->
+>>>>>>> 61d2098cfc8de3ab5f29be87439d0ad8e6e8ab13
 
 <!-- menu ends -->
 <app-footer></app-footer>
