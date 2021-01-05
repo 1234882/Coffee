@@ -10,13 +10,13 @@ import { LandingpageComponent } from './Components/landingpage/landingpage.compo
 import { LandingComponent } from './Components/landing/landing.component';
 const routes: Routes = [
   // {path:"landing", component:LandingComponent},
-  {path:"home",component:HomeComponent},
+  {path:"",component:HomeComponent},
   {path:"Gallery",component:GalleryComponent},
   {path: "Product",component:MenuComponent},
   {path: "Contact",component:ContactComponent},
   {path:'Blog',component:BlogComponent},
   {path:"about", component:AboutComponent},
-  {path: "", component:LandingpageComponent}
+  // {path: "", component:LandingpageComponent}
 
 ];
 

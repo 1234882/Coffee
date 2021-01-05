@@ -9,7 +9,7 @@ import { APIcustomerService } from 'src/app/services/apicustomer.service';
   styleUrls: ['./landing.component.css']
 })
 export class LandingComponent implements OnInit {
-  customer:APIcustomers | undefined
+  customer:any | undefined
 
   constructor(private _APIcustService:APIcustomerService, private _router:Router) { 
 
@@ -26,11 +26,11 @@ ngOnInit(): void {
   }
 }
 
-// AddCustomer(){
-//   this._APIcustService.AddCutomer(this.customer).subscribe(
-//     (data)=>this._router.navigateByUrl('/main'),
-//     (err)=>console.log(err)
-//   )
+AddCustomer(){
+  this._APIcustService.AddCutomer(this.customer).subscribe(
+    (data)=>this._router.navigateByUrl('/landing'),
+    // (err)=>console.log(err)
+  )
 
-// } 
+} 
  }
