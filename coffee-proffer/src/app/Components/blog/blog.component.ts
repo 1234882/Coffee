@@ -14,15 +14,15 @@ export class BlogComponent implements OnInit {
   constructor(private _blogApiService: blogApiService) { }
 
 
-  listarticles:Comments[] | undefined;
+  listarticles:any[] | undefined;
   ngOnInit() {
 
     this._blogApiService.getcomments()
     .subscribe
     (
-      data=>
+      res=>
       {
-        this.listarticles = data;
+        this.listarticles = res;
 
       }
 

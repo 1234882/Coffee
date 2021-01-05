@@ -1,3 +1,4 @@
+<app-nav></app-nav>
 <section class="hero" id="hero" style="background:url('./../../../assets/cup8.jpg') center no-repeat;background-size: cover;height: 80vh;">
     <div class="container">
         <h2 class="sub-headline">
@@ -30,13 +31,13 @@
                     <div class="asterisk"><i class="fas fa-asterisk"></i></div>
 
                 </div>
-                <!-- <div *ngFor="let a of about"> -->
+                 <div *ngFor="let a of about">
                     <div class="single-animation" >
-                        <h4 style="font-weight:bold;"><!--{{about["1"].vition}}--></h4>
+                        <h4 style="font-weight:bold;">{{a.vition}}</h4>
                     </div>
-                    <p><!--{{about["1"].mistion}}--></p>
+                    <p>{{a.mistion}}</p>
 
-                <!-- </div> -->
+                 </div>
 
 
 
@@ -60,7 +61,7 @@
 
 
             </div>
-            <div class="resturant-description animate-right">
+            <div class="resturant-description animate-right" *ngFor="let a of about">
 
              <div class="global-headline">
                     <h2 class="sub-headline">
@@ -72,10 +73,10 @@
 
                 </div>
                 <div class="single-animation" >
-                    <h4 style="font-weight:bold;"><!--{{about["0"].vition}}--></h4>
+                    <h4 style="font-weight:bold;">{{a.vition}}</h4>
                 </div>
 
-                <p><!--{{about["0"].mistion}}--></p>
+                <p>{{a.mistion}}</p>
             </div>
         </div>
     </div>
@@ -83,3 +84,4 @@
  <!-- <h1>{{ about| json}} </h1> -->
 
 <!-- menu ends -->
+<app-footer></app-footer>

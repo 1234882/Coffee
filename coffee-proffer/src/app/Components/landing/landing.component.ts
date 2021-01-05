@@ -20,16 +20,17 @@ ngOnInit(): void {
 
   this.customer={
     name:"",
-    phone:null,
+    phone:0,
     type:"",
     
   }
 }
 
-AddCustomer(){
-  this._APIcustService.AddCutomer(this.customer).subscribe(
-    (data)=>this._router.navigateByUrl('/main'),
-    (err)=>console.log(err)
-  )
+// AddCustomer(){
+//   this._APIcustService.AddCutomer(this.customer).subscribe(
+//     (data)=>this._router.navigateByUrl('/main'),
+//     (err)=>console.log(err)
+//   )
 
-}
+// } 
+ }

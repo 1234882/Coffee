@@ -1,4 +1,4 @@
-<section style="margin-top:600px;">
+<!-- <section style="margin-top:600px;">
 
    
    
@@ -25,19 +25,23 @@
       <form #myForm="ngForm" (ngSubmit)="AddCustomer()">
         <label>Full Name</label>
         <br/>
-        <input name="full_name" #cname="ngModel"  [(ngModel)]="customer.name" required minlength="6"  class="form-control" />
+        <input name="full_name" #cname="ngModel"  [(ngModel)]="customer.name" 
+        required minlength="6"  class="form-control" />
+        <br/>
+        <br/>
+        <label>Phone</label>
+        <input name="full_name" #cname="ngModel"  [(ngModel)]="customer.Phone" 
+        required minlength="6"  class="form-control" />
         <br/>
        
        
         
-        <textarea name="message">
-        </textarea>
+        
         <br/>
         <br/>
       </form>
       <button type="submit" class="btn btn-primary" [disabled]="myForm.invalid">Submit</button>
     </body>
-    
-    view rawContactForm hosted with ❤ by GitHub
+   
 </section>
-
+ -->

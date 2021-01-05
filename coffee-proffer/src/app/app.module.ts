@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { GalleryService} from './services/gallery.service'
+import { GalleryService} from './services/gallery.service';
 import {FlexLayoutModule} from "@angular/flex-layout";
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,10 +20,13 @@ import { ContactsService } from './services/contacts.service';
 import { blogApiService } from './services/blogapi.service';
 
 import { ProductsService } from './services/products.service';
-import {AboutService} from './services/about.service'
+import {AboutService} from './services/about.service';
 import { AboutComponent } from './Components/about/about.component';
-import { LandingComponent } from './Components/landing/landing.component';
+import { LandingpageComponent } from './Components/landingpage/landingpage.component';
+import { from } from 'rxjs';
 import { FormsModule } from '@angular/forms';
+import { ApiCustomerService } from './services/api-customer.service';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +39,7 @@ import { FormsModule } from '@angular/forms';
     MenuComponent,
     ContactComponent,
     AboutComponent,
-    LandingComponent
+    LandingpageComponent
 
   ],
   imports: [
@@ -44,7 +49,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FlexLayoutModule,
   ],
-  providers: [GalleryService, ApiPostService, ContactsService, blogApiService, ProductsService,AboutService],
+  providers: [GalleryService, ApiPostService, ContactsService, blogApiService, ProductsService,AboutService,ApiCustomerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
