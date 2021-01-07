@@ -23,19 +23,19 @@
             <div class="resturant-description padding-right animate-left">
                 <div class="global-headline">
                     <h2 class="sub-headline">
-                        <span class="first-letter">D</span>iscover
+                        <span class="first-letter">M</span>ission
 
                     </h2>
-                    <h1 class="headline headline-dark">Our Story</h1>
+                    <!-- <h1 class="headline headline-dark">Our Story</h1> -->
 
                     <div class="asterisk"><i class="fas fa-asterisk"></i></div>
 
                 </div>
-                 <!--<div *ngFor="let a of about">-->
+                 <div *ngFor="let a of about">
                     <div class="single-animation" >
-                        <h4 style="font-weight:bold;">{{about["0"].mistion}}</h4>
+                        <!-- <h4 style="font-weight:bold;">{{a.mistion}}</h4> -->
                     </div>
-                    <p>{{about["0"].vition}}</p>
+                    <!-- <p>{{a.vition}}</p> -->
 
                  </div>
 
@@ -46,7 +46,7 @@
                  <img src="./../../../assets/cup4.jpg" alt="">
             </div>
         </div>
-    <!--</div>-->
+    </div>
 </section>
 
 
@@ -65,27 +65,25 @@
 
              <div class="global-headline">
                     <h2 class="sub-headline">
-                        <span class="first-letter">D</span>iscover
+                        <span class="first-letter">V</span>ision
 
                     </h2>
-                    <h1 class="headline headline-dark">Coffee Profeer</h1>
+                    <!-- <h1 class="headline headline-dark">Coffee Profeer</h1> -->
                     <div class="asterisk"><i class="fas fa-asterisk"></i></div>
 
                 </div>
-                <div class="single-animation" >
-                    <h4 style="font-weight:bold;">{{about["1"].mistion}}</h4>
-                </div>
+                <div *ngFor="let a of about">
 
-                <p>{{about["1"].vition}}</p>
+                <div class="single-animation" >
+                    <!-- <h4 style="font-weight:bold;">{{a.vition}}</h4> -->
+                </div>
+                </div>
+                <!-- <p>{{a.vition}}</p> -->
             </div>
         </div>
     </div>
 </section>
-<<<<<<< HEAD
- <!-- <h1>{{ about| json}} </h1> -->
-=======
  <!--<h1>{{ about| json}} </h1>-->
->>>>>>> 61d2098cfc8de3ab5f29be87439d0ad8e6e8ab13
 
 <!-- menu ends -->
 <app-footer></app-footer>

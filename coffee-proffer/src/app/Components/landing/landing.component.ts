@@ -26,11 +26,11 @@ ngOnInit(): void {
   }
 }
 
-AddCustomer(){
-  this._APIcustService.AddCutomer(this.customer).subscribe(
-    (data)=>this._router.navigateByUrl('/landing'),
-    // (err)=>console.log(err)
-  )
+// AddCustomer(){
+//   this._APIcustService.AddCutomer(this.customer).subscribe(
+//     (data)=>this._router.navigateByUrl('/landing'),
+//     // (err)=>console.log(err)
+//   )
 
-} 
+// } 
  }
