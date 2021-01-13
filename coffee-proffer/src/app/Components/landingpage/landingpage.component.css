@@ -7,7 +7,7 @@
     --body-font:'Oswald', sans-serif;
     --secondary-font:'Herr Von Muellerhoff', cursive;
     --main-font-color-dark:#252525;
-    --secondary-font-color:#c59d5f;
+    --secondary-font-color:#b80b30;
     --body-font-color:#515151;
 }
 html{
@@ -24,11 +24,13 @@ html{
     border: none;
 }
 body{
-    background-image: url('./../../../assets/cup8.jpg');
+    background-image: url('./../../../assets/co.jpg');
+    opacity: 0.8;
     width: 100%;
     height: 100%;
     background-size: 100%;
     position: relative;
+
     background-repeat: no-repeat;
 }
 header{
@@ -136,13 +138,14 @@ section i{
     border: transparent;
     margin: 20px;
     padding: 10px;
-    font-size: 18px;
+    font-weight: bold;
     border-bottom: 2px solid #fff;
 }
 .form .contact-form input ~ span{
     position: absolute;
     left: 20px;
     transition: 0.9s ease-in-out;
+    font-weight: bold;
     margin-top: 10px;
 }
 .form .contact-form input:focus ~span{
@@ -167,6 +170,27 @@ section i{
 .form .contact-form textarea:focus ~span{
     transform: translateY(-20px);
     pointer-events: none;
+}
+.form button{
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 3.5rem;
+    width: 14rem;
+    background: rgb(248, 3, 3);
+    color: #fff;
+}
+.form button:hover{
+  color: rgb(14, 13, 13);
 }
 .form .contact-form input[type=submit]{
     outline: none;

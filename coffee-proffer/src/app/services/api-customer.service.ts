@@ -18,11 +18,11 @@ export class ApiCustomerService {
 
   }
 
-  nsertPost(post:ApiCustomer):Observable<ApiCustomer>{
-    const httpoptions={headers:new HttpHeaders({
-    'Content-Type':'application/json',
-    'Accept':'*/*'
-    })};
-    return this.http.post<ApiCustomer>('https://cofeeshopproffer.herokuapp.com/api/landing/',httpoptions);
-    }
+  //nsertPost(post:ApiCustomer):Observable<ApiCustomer>{
+    //const httpoptions={headers:new HttpHeaders({
+    //'Content-Type':'application/json',
+    //'Accept':'*/*'
+    //})};
+    //return this.http.post<ApiCustomer>('https://cofeeshopproffer.herokuapp.com/api/landing/',httpoptions);
+    //}
 }

@@ -37,14 +37,14 @@
         </div>
 
       <!--<form #myForm="ngForm" (ngSubmit)="AddCustomers()">-->
-      <form>
+      <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
         <div class="form">
             <div class="right">
               <div class="contact-form">
                   <!--<input type="text" name="fullname" #fullname="ngModel"
                    required minlength="6"
                 [(ngModel)]="customer.name" class="form-control">-->
-                <input type="text" required>
+                <input type="text" name="name" #fullname="ngModel" ngModel placeholder="your name" required>
                   <span>Full Name</span>
               </div>
 
@@ -52,17 +52,22 @@
                   <!--<input type="text" name="phone" #phone="ngModel"
                   required minlength="6"
                [(ngModel)]="customer.phone" class="form-control">-->
-               <input type="text" required>
+               <input type="text" name="phone" #phone="ngModel" ngModel placeholder="your phone" required>
                   <span>Phone Number</span>
               </div>
             <div class="contact-form">
-                <input type="E-mail" required>
-                <span>E-mail</span>
+                <input type="text" name="type" #type="ngModel" ngModel required placeholder="Retail or Hotsale">
+                <!--<select name="Type" ngModel>
+                  <option>Retail</option>
+                  <option>Hotsale</option>
+                </select>-->
+                <span>Type</span>
             </div>
 
-              <div class="contact-form">
+              <!--<div class="contact-form">
                   <input type="submit" name="submit" routerLink="home">
-              </div>
+              </div>-->
+              <button type="submit" name="submit">Submit</button>
               </div>
             </div>
     </form>
