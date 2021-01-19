@@ -26,6 +26,7 @@ import { LandingpageComponent } from './Components/landingpage/landingpage.compo
 import { from } from 'rxjs';
 import { FormsModule } from '@angular/forms';
 import { ApiCustomerService } from './services/api-customer.service';
+import { ThankyouComponent } from './Components/thankyou/thankyou.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { ApiCustomerService } from './services/api-customer.service';
     MenuComponent,
     ContactComponent,
     AboutComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    ThankyouComponent
 
   ],
   imports: [

@@ -2,7 +2,6 @@ import { NgModule,Injectable } from '@angular/core';
 import { ApiCustomer } from '../interfaces/api-customer';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environment/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -14,9 +13,26 @@ import { environment } from 'src/environment/environment';
 })
 export class ApiCustomerService {
 
-  constructor(private http:HttpClient) {
+  baseURL: string = "https://cofeeshopproffer.herokuapp.com/api/landing/'";
 
+  constructor(private http:HttpClient) {}
+
+
+  addCustomer(customer:ApiCustomer): Observable<any> {
+    const headers = { 'content-type': 'application/json'}
+    const body=JSON.stringify(customer);
+    console.log(body)
+    return this.http.post(this.baseURL , body,{'headers':headers})
   }
+  //Insert(data: ApiCustomer): Observable<ApiCustomer> {
+    //return this.http.post<ApiCustomer>('https://cofeeshopproffer.herokuapp.com/api/landing/', data, {
+      //headers : new HttpHeaders ({
+        //'Content-Type':'application/json',
+        //'Accept':'*/*'
+      //})
+
+    //});
+}
 
   //nsertPost(post:ApiCustomer):Observable<ApiCustomer>{
     //const httpoptions={headers:new HttpHeaders({
@@ -25,4 +41,4 @@ export class ApiCustomerService {
     //})};
     //return this.http.post<ApiCustomer>('https://cofeeshopproffer.herokuapp.com/api/landing/',httpoptions);
     //}
-}
+

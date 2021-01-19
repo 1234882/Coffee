@@ -37,14 +37,14 @@
         </div>
 
       <!--<form #myForm="ngForm" (ngSubmit)="AddCustomers()">-->
-      <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+      <form #userPost="ngForm" (ngSubmit)="addCustomer()">
         <div class="form">
             <div class="right">
               <div class="contact-form">
                   <!--<input type="text" name="fullname" #fullname="ngModel"
                    required minlength="6"
                 [(ngModel)]="customer.name" class="form-control">-->
-                <input type="text" name="name" #fullname="ngModel" ngModel placeholder="your name" required>
+                <input type="text" name="name" #fullname="ngModel" [(ngModel)]="customer.name" placeholder="your name" required>
                   <span>Full Name</span>
               </div>
 
@@ -52,11 +52,11 @@
                   <!--<input type="text" name="phone" #phone="ngModel"
                   required minlength="6"
                [(ngModel)]="customer.phone" class="form-control">-->
-               <input type="text" name="phone" #phone="ngModel" ngModel placeholder="your phone" required>
+               <input type="text" name="phone" #phone="ngModel" [(ngModel)]="customer.phone" placeholder="your phone" required>
                   <span>Phone Number</span>
               </div>
             <div class="contact-form">
-                <input type="text" name="type" #type="ngModel" ngModel required placeholder="Retail or Hotsale">
+                <input type="text" name="type" #type="ngModel" [(ngModel)]="customer.type" required placeholder="Retail or Hotsale">
                 <!--<select name="Type" ngModel>
                   <option>Retail</option>
                   <option>Hotsale</option>
@@ -67,7 +67,9 @@
               <!--<div class="contact-form">
                   <input type="submit" name="submit" routerLink="home">
               </div>-->
-              <button type="submit" name="submit">Submit</button>
+
+              <a routerLink="Thank"><button type="submit" name="submit" (click)="addCustomer()">Submit</button></a>
+
               </div>
             </div>
     </form>
