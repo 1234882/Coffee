@@ -170,7 +170,7 @@ section i{
     font-size: 13px;
     background: transparent;
 }
- 
+
 .form .contact-form input ::placeholder{
   color: #252525;
   font-weight: bold;
@@ -183,10 +183,6 @@ section i{
     font-weight: bold;
     margin-top: 10px;
     font-size: 16px;
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/ahmed
 }
 .form .contact-form input:focus ~span{
     transform: translateY(-20px);
