@@ -15,7 +15,8 @@
     --body-font:'Oswald', sans-serif;
     --secondary-font:'Herr Von Muellerhoff', cursive;
     --main-font-color-dark:#252525;
-    --secondary-font-color:#c59d5f;
+    --secondary-font-color:#b80b30;
+    /*#c59d5f*/
     --body-font-color:#515151;
 }
 html{

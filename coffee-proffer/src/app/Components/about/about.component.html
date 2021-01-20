@@ -1,5 +1,5 @@
 <app-nav></app-nav>
-<section class="hero" id="hero" style="background:url('./../../../assets/cup8.jpg') center no-repeat;background-size: cover;height: 80vh;">
+<section class="hero" id="hero" style="background:url('./../../../assets/COO.jpg') center no-repeat;background-size: cover;height: 80vh; opacity: 0.8;">
     <div class="container">
         <h2 class="sub-headline">
             <span class="first-letter">A</span>BOUT US
@@ -33,9 +33,9 @@
                 </div>
                  <div *ngFor="let a of about">
                     <div class="single-animation" >
-                        <h4 style="font-weight:bold;">{{a.mistion}}</h4>
+                        <!-- <h4 style="font-weight:bold;">{{a.mission}}</h4> -->
                     </div>
-                    <!-- <p>{{a.vition}}</p> -->
+                    <!--<p>{{about["0"].vition}}</p>-->
 
                  </div>
 
@@ -72,13 +72,11 @@
                     <div class="asterisk"><i class="fas fa-asterisk"></i></div>
 
                 </div>
-                <div *ngFor="let a of about">
+                <div class="single-animation" *ngFor="let a of about">
+                    <!-- <h4 style="font-weight:bold;">{{a.vision}}</h4> -->
+                </div>
 
-                <div class="single-animation" >
-                    <h4 style="font-weight:bold;">{{a.vition}}</h4>
-                </div>
-                </div>
-                <!-- <p>{{a.vition}}</p> -->
+                <!--<p>{{about["1"].vition}}</p>-->
             </div>
         </div>
     </div>
