@@ -19,7 +19,7 @@ export class LandingpageComponent implements OnInit {
   ngOnInit(): void {
     this.customer={
       name:"",
-      phone:null,
+      phone:"",
       type:""
 
     }

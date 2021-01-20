@@ -1,6 +1,6 @@
 export interface ApiCustomer {
   name:string;
-  phone:number;
+  phone:string;
   type:string;
 
 }

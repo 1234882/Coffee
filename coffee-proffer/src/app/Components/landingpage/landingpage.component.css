@@ -156,6 +156,7 @@ section i{
     transition: 0.9s ease-in-out;
     font-weight: bold;
     margin-top: 10px;
+    font-size: 16px;
 }
 .form .contact-form input:focus ~span{
     transform: translateY(-20px);
@@ -197,6 +198,7 @@ section i{
     width: 14rem;
     background: rgb(248, 3, 3);
     color: #fff;
+    margin-top: 50px;
 }
 .form button:hover{
   color: rgb(14, 13, 13);
