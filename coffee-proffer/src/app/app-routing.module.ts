@@ -9,7 +9,10 @@ import{AboutComponent}from './Components/about/about.component';
 import { LandingpageComponent } from './Components/landingpage/landingpage.component';
 import { ThankyouComponent } from './Components/thankyou/thankyou.component';
 const routes: Routes = [
-  {path:"home",component:HomeComponent},
+  // {path:"landing", component:LandingComponent},
+  {path: "", component:LandingpageComponent},
+
+  {path:"Home",component:HomeComponent},
   {path:"Gallery",component:GalleryComponent},
   {path: "Product",component:MenuComponent},
   {path: "Contact",component:ContactComponent},

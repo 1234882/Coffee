@@ -48,7 +48,6 @@ import { ThankyouComponent } from './Components/thankyou/thankyou.component';
     BrowserModule,
     HttpClientModule,
     FormsModule,
-
     AppRoutingModule,
     FlexLayoutModule,
   ],

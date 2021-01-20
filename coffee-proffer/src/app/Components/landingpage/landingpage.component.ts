@@ -27,7 +27,7 @@ export class LandingpageComponent implements OnInit {
 }
 addCustomer() {
   this.apiCustomer.addCustomer(this.customer).subscribe(data => {
-      console.log(data),
+      console.log(data);
       (err)=>console.log(err)
 
     })

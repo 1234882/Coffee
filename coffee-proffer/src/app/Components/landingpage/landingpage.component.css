@@ -135,7 +135,7 @@ section i{
     min-height: 110vh;
 }
 
-.form .contact-form input{
+.form .contact-form input {
     width: 30rem;
     background-color: transparent;
     border: 0px;
@@ -145,6 +145,32 @@ section i{
     font-weight: bold;
     border-bottom: 2px solid #fff;
 }
+.form .contact-form select {
+    width: 30rem;
+    background-color: transparent !important;
+    border: 0px;
+    border: transparent;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+
+}
+.form .contact-form select  option {
+    width: 30rem;
+    background-color: transparent !important;
+    border: 0px;
+    border: transparent;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+    color: black;
+    font-size: 13px;
+    background: transparent;
+}
+ 
 .form .contact-form input ::placeholder{
   color: #252525;
   font-weight: bold;
@@ -157,6 +183,10 @@ section i{
     font-weight: bold;
     margin-top: 10px;
     font-size: 16px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/ahmed
 }
 .form .contact-form input:focus ~span{
     transform: translateY(-20px);
@@ -185,7 +215,6 @@ section i{
     outline: none;
     border: none;
     border-radius: 5rem;
-    color: #333;
     font-size: 1.6rem;
     font-weight: bold;
     text-transform: capitalize;

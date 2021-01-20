@@ -5,18 +5,20 @@
 
     <nav>
     <ul>
-        <li><a href="home">Home</a></li>
-        <li><a href="Product">Products</a></li>
-        <li><a href="Gallery">Gallery</a></li>
-        <li><a href="about">About Us</a></li>
-        <li><a href="Blog">Our Blog</a></li>
-        <li><a href="Contact">Contact Us</a></li>
+        <li><a href="Home">{{nav[0].home}}</a></li>
+        <li><a href="Product">{{nav[0].products}}</a></li>
+        <li><a href="Gallery">{{nav[0].gallery}}</a></li>
+        <li><a href="about">{{nav[0].blog}}</a></li>
+        <li><a href="Blog">{{nav[0].aboutus}}</a></li>
+        <li><a href="Contact">{{nav[0].contactus}}</a></li>
 
     </ul>
 </nav>
 <div class="fas fa-mug-hot"></div>
 </header>
 
-<router-outlet></router-outlet>
+<router-outlet>
+
+</router-outlet>
  <!--<script src="./../../../assets/myjs/toggle.js"></script> -->
 

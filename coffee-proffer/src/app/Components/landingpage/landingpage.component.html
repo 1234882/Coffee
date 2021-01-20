@@ -52,18 +52,21 @@
                   <!--<input type="text" name="phone" #phone="ngModel"
                   required minlength="6"
                [(ngModel)]="customer.phone" class="form-control">-->
-               <input type="text" name="phone" #phone="ngModel" [(ngModel)]="customer.phone" placeholder="your phone" required>
+               <input type="text" name="phone" #phone="ngModel" [(ngModel)]="customer.phone"  minlength="6" placeholder="your phone" required>
                   <span>Phone Number</span>
               </div>
             <div class="contact-form">
-                <input type="text" name="type" #type="ngModel" [(ngModel)]="customer.type" required placeholder="Retail or Hotsale">
-                <!--<select name="Type" ngModel>
-                  <option>Retail</option>
-                  <option>Hotsale</option>
-                </select>-->
-                <span>Type</span>
+                <!-- <input type="text" name="type" #type="ngModel" [(ngModel)]="customer.type" required placeholder="Retail or Hotsale"> -->
+              
+                <select  name="type" #type="ngModel" [(ngModel)]="customer.type" required >
+                   
+                    <option disabled selected value> -- Customer type -- </option>
+                    <option value="Retail">Retail</option>
+                  <option value="Hotsale">Hotsale</option>
+                </select>
+                <!-- <span>Type</span> -->
             </div>
-
+            <!-- <P>My name is {{customer.phone}}</P> -->
               <!--<div class="contact-form">
                   <input type="submit" name="submit" routerLink="home">
               </div>-->
