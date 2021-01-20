@@ -7,7 +7,7 @@ import { HomeComponent } from './Components/home/home.component';
 import {MenuComponent}from './Components/menu/menu.component';
 import{AboutComponent}from './Components/about/about.component';
 import { LandingpageComponent } from './Components/landingpage/landingpage.component';
-import { LandingComponent } from './Components/landing/landing.component';
+import { ThankyouComponent } from './Components/thankyou/thankyou.component';
 const routes: Routes = [
   // {path:"landing", component:LandingComponent},
   {path: "", component:LandingpageComponent},
@@ -18,6 +18,9 @@ const routes: Routes = [
   {path: "Contact",component:ContactComponent},
   {path:'Blog',component:BlogComponent},
   {path:"about", component:AboutComponent},
+  {path: "", component:LandingpageComponent},
+  {path:"Thank",component:ThankyouComponent},
+
 
 ];
 

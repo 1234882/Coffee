@@ -8,16 +8,16 @@
     -webkit-transition: all .2s linear;
     transition: all .2s linear;
   }
-  
+
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;
   }
-  
+
   body {
     overflow-x: hidden;
   }
-  
+
   #home .video-container {
     position: absolute;
     top: 0;
@@ -43,7 +43,7 @@
   #home .video-container .v1 {
     display: block;
   }
-  
+
   #home .controls {
     position: absolute;
     bottom: 14%;
@@ -54,7 +54,7 @@
     display: -ms-flexbox;
     display: flex;
   }
-  
+
   #home .controls .dots {
     height: 2rem;
     width: 2rem;
@@ -62,33 +62,33 @@
     background: #ff0000;
     margin: 0 1rem;
   }
-  
-  
+
+
   #home .controls .dots:hover {
     background: #fff;
   }
-  
+
   #special {
     background: rgb(248, 247, 247);
     min-height: 100vh;
   }
-  
+
   #special .heading h1 {
     font-size: 4rem;
     color: #000;
     padding-top: 7rem;
     margin-bottom: 2rem;
   }
-  
+
   #special .heading h1 span {
     color:  #ff0000;
   }
-  
+
   #special .heading p {
     color: rgb(5, 5, 5);
     font-size: 2rem;
   }
-  
+
   #special .card-container {
     width: 95%;
     margin: 7rem auto;
@@ -103,7 +103,7 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  
+
   #special .card-container .card {
     height: 40rem;
     width: 30rem;
@@ -112,21 +112,21 @@
     margin: 2rem;
     text-align: center;
   }
-  
+
   #special .card-container .card img {
     height: 60%;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  
+
   #special .card-container .card p {
     font-size: 1.6rem;
     margin: 2rem 0;
     color:#fff;
 
   }
-  
+
   #special .card-container .card button {
     outline: none;
     border: none;
@@ -144,7 +144,7 @@
     width: 14rem;
     background: rgb(248, 245, 245);
   }
-  
+
   #special .card-container .card button::before {
     content: '';
     position: absolute;
@@ -157,26 +157,26 @@
     transition: .2s;
     z-index: -1;
   }
-  
+
   #special .card-container .card button:hover::before {
     width: 100%;
   }
-  
+
   #special .card-container .card button:hover {
     color: #fff;
   }
-  
+
   #special .card-container .card:hover {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
- 
-  
+
+
   @media (max-width: 786px) {
     html {
       font-size: 50%;
     }
-   
+
   }
 
   .container{
@@ -185,7 +185,47 @@
     margin: 0 auto;
     padding: 0 2.4rem;
   }
- 
+  .menu-toggle{
+    display: none;
+}
+.nav{
+    justify-content: space-between;
+}
+.nav-list{
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    padding: 0;
+    justify-content: initial;
+    flex-direction: row;
+    transform: initial;
+    transition: initial;
+
+}
+.nav-item{
+    margin: 0 2.4rem;
+    border: none;
+}
+.nav-item:last-child{
+    margin-right: 0;
+}
+.nav-link{
+    font: size 1.3rem;
+}
+.active{
+    position: relative;
+}
+.active::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    bottom: -3px;
+}
+
   .sub-headline{
     font-size:8.5rem;
     font-family: var( --secondary-font);
@@ -216,7 +256,7 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .asterisk{
     font-size: 1.2rem;
     color: var(--secondary-font-color);
@@ -238,7 +278,7 @@
     margin-bottom: 1.2rem;
     letter-spacing: 2px;
     margin-right: -3px;
-  
+
   }
   .btn{
     display: inline-block;
@@ -313,8 +353,8 @@
   .body-btn:focus::before{
     color:var(--main-font-color-dark);
   }
-  
-  
+
+
   .between{
      min-height: 65vh;
      display: flex;
@@ -332,23 +372,23 @@
   .discover-our-menu .resturant-description{
      padding-top: 3rem;
      margin-bottom: 0;
-  
+
   }
- 
-  
-/*   
+
+
+/*
   @media screen and (min-width:900px){
     section{
         padding: 7.9rem;
     }
-  
+
     .sub-headline{
         font-size: 10rem;
     }
     .headline{
         font-size:4.7rem;
         letter-spacing: .8rem;
-  
+
     }
     .first-letter{
         font-size: 12.2rem;
@@ -366,8 +406,8 @@
   .padding-right{
    padding-right: 7rem;
   }
-  
-  
+
+
   } */
-  
+
   /*# sourceMappingURL=style.css.map */
