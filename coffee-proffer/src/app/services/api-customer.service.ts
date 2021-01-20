@@ -1,29 +1,36 @@
-import { NgModule,Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { ApiCustomer } from '../interfaces/api-customer';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams, HttpErrorResponse} from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { throwError } from 'rxjs/internal/observable/throwError';
+import { catchError } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
-@NgModule({
-  providers:[
 
-  ],
-})
 export class ApiCustomerService {
 
-  baseURL: string = "https://cofeeshopproffer.herokuapp.com/api/landing/'";
+  baseURL: string = "https://cofeeshopproffer.herokuapp.com/api/landing/";
 
   constructor(private http:HttpClient) {}
 
 
   addCustomer(customer:ApiCustomer): Observable<any> {
-    const headers = { 'content-type': 'application/json'}
-    const body=JSON.stringify(customer);
+    const httpoptions = {headers:new HttpHeaders({
+      'Content-Type':'application/json; charset=utf-8',
+      'Accept':'*/*'
+      })};
+      //const body = new HttpParams()
+      //.set('name', 'foo')
+      //.set('type', 'bar')
+    const body=JSON.stringify(customer)
     console.log(body)
-    return this.http.post(this.baseURL , body,{'headers':headers})
+    return this.http.post(this.baseURL , body, httpoptions).pipe(catchError(this.handleError));
   }
+  handleError(error: HttpErrorResponse) {
+    return throwError(error);
+}
   //Insert(data: ApiCustomer): Observable<ApiCustomer> {
     //return this.http.post<ApiCustomer>('https://cofeeshopproffer.herokuapp.com/api/landing/', data, {
       //headers : new HttpHeaders ({

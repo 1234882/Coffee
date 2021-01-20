@@ -8,7 +8,7 @@
     --secondary-font:'Herr Von Muellerhoff', cursive;
     --main-font-color-dark:#252525;
     --secondary-font-color:#b80b30;
-    --body-font-color:#515151;
+    --body-font-color:#2c2c2c;
 }
 html{
     font-family: var(--body-font);
@@ -299,15 +299,15 @@ section i{
       bottom: -3px;
   }
     .sub-headline{
-        font-size: 6rem;
+        font-size: 5rem;
     }
     .headline{
-        font-size:2rem;
+        font-size:1.5rem;
         letter-spacing: .8rem;
 
     }
     .first-letter{
-        font-size: 8rem;
+        font-size: 7rem;
     }
     header{
         position: absolute;
